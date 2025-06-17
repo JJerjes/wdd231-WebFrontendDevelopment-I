@@ -1,0 +1,248 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+} 
+
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+}
+
+header {
+    color: white;
+    display: grid;
+    grid-template-rows: 1fr auto;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(8, 32, 72);
+}
+
+.logo img {
+    width: 80px;
+    height: auto;
+    object-fit: cover;
+    box-shadow: 0px 1px 20px 5px rgba(9, 1, 1, 0.767);
+}
+
+.img {
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+    border-radius: 7px;
+}
+
+#fullName {
+    margin: 0 0 0 30px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav a {
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    transition: transform 0.4s ease;
+}
+
+.nav a:hover {
+    color: yellow;
+}
+
+
+#menu {
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: none;
+    border-radius: 5px;
+    display: none;
+
+}
+
+#menu::before {
+    content: '≣';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.5rem;
+}
+
+#menu.open::before {
+    content: '❌';
+    font-size: 1.1rem;
+}
+
+main {
+    padding: 20px;
+    display: grid;
+    grid-template-rows: auto auto;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: auto auto;
+}
+
+.first-part {
+    display: grid;
+    grid-template-columns: 1fr auto;
+}   
+
+.first-part h2 {
+    background-color: rgb(8, 32, 72);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 4px;
+}
+
+.divideOne {
+    margin: 0 10px 0 0;
+    border: .5px solid rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+}
+
+.courseDeta {
+    padding: 20px;
+}
+
+.courseDeta h3 {
+    margin: 0 0 20px 0;
+}
+
+.courseDeta ul {
+    
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    color: gray;
+}
+
+.divideTwo {
+    margin: 0 0 0 10px;
+    border: .5px solid rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+}
+
+.divideTwo figure {
+    padding: 25px;
+}
+
+.divideTwo figure, figcaption {
+    text-align: center;
+    font-size: small;
+    font-weight: bolder;
+}
+
+.second-part {
+    
+    display: grid;
+    grid-template-rows: auto auto 1fr;
+    margin: 20px 0 0 0;
+}
+
+.h2 {
+    background-color: rgb(8, 32, 72);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 4px;
+}
+
+.filters {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin:20px 0;
+}
+
+.filters button {
+    padding: 15px 20px;
+    width: 20%;
+    font-weight: bold;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.filters button:hover {
+    background-color: #bd6f09;
+}
+
+
+.allCourse {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 16px;
+  padding: 20px;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  border: 1px solid red;
+}
+
+.course-button {
+  padding: 25px;
+  background-color: #8c8b8b;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+  transition: background-color 0.3s ease;
+  text-align: center;
+}
+
+.course-button:hover {
+  background-color: rgb(104, 104, 22);
+}
+
+.course-button.completed {
+  background-color: green;
+}
+
+#totalCredits {
+  margin-top: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+
+footer {
+    background-color: rgb(8, 32, 72);
+    color: white;
+    padding: 10px;
+}
+
+.flag, p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flag img {
+    margin: 0 0 0 10px;
+}
+

@@ -1,0 +1,61 @@
+:root {
+    --primary-color: #19539b; 
+    --second-color: #fff; 
+    --third-color: #5cfa077c;
+    --fourth-color: #00000046; 
+    --highlight-color: #f9a825;
+    --bg-light: #f1f1f1; 
+    --bg-dark: #3b5998;
+}
+
+dialog {
+    border: none;
+    width: 100%;
+    margin: 10px auto;
+    background-color: #333333ce;
+    border-radius: 10px;
+    position: fixed;
+}
+
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;     
+    color: var(--highlight-color); 
+}
+
+.modal-content h2 {
+    padding: 10px 0;
+    text-align: center;
+}
+
+.modal-content p {
+    font-size: 18px;
+    color: #f1eded; 
+    text-align: center;
+}
+
+.modal-content img {
+    width: 230px;
+    height: auto;
+    margin: 10px auto;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #e4e4e4; 
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: #e63946; 
+}

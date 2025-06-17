@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="FisioCarrillo - Therapies and Rehabilitation Center">
+    <meta property="og:description" content="FisioCarrillo is a center specialized in physical therapy and rehabilitation. Discover our services and schedule your appointment online.">
+    <meta property="og:image" content="../website/images/logo.webp">
+    <meta property="og:url" content="https://jjerjes.github.io/wdd231/website/website.html">
+    <meta property="og:type" content="website">
+     <meta name="twitter:card" content="../website/images/logo.webp">
+     <meta name="twitter:title" content="FisioCarrillo - Therapies and Rehabilitation Center">
+     <meta name="twitter:description" content="FisioCarrillo is a center specialized in physical therapy and rehabilitation. Discover our services and schedule your appointment online.">
+     <meta name="twitter:image" content="../website/images/logo.webp">
+     <meta name="twitter:url" content="https://jjerjes.github.io/wdd231/website/website.html">
+    <title>FISIOCARRILLO</title>
+    <!-- Links CSS -->
+    <link rel="stylesheet" href="styles/website.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/modal.css">
+    <!-- Links scrips -->
+    <script src="scripts/website.js" defer></script>
+    <script src="scripts/modal.js" type="module" defer></script>
+    <script src="scripts/main.js" type="module" defer></script>
+    <script src="scripts/menu.js" type="module" defer></script>
+    <!-- Assets -->
+    <link rel="icon" href="assert/favicon1.ico" type="image/x-icon">
+    <meta name="description" content="FisioCarrillo is a center specialized in physical therapy and rehabilitation. We provide high quality services to improve your health and well-being.">
+    <meta name="author" content="Jerjes Mariluz">
+    <!-- Font Family  -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="./images/logo.webp" alt="photo of logo">
+        <button id="menu" type="button" aria-label="Toggle menu"></button>
+    </header> 
+    <nav id="nav">
+        <a href="index.html" title="Home">Home</a>
+        <a href="aboutus.html" title="About Us">About Us</a>
+        <a href="services.html" title="Services">Services</a>
+        <a href="contact.html" title="Contact">Contact</a>
+    </nav>
+    <dialog id="modal">
+        <div class="modal-content">
+            <span id="close" class="close">&times;</span>
+            <h2>Welcome to FisioCarrillo!</h2>
+            <p>Get a <strong>20% discount</strong> at your first physical therapy consultation.</p>
+            <p><strong>Schedule your appointment now and start your path to better mobility!</strong></p>
+            <img src="./images/index/flayer.webp" alt="flayer fisiocarrillo">
+        </div>
+    </dialog>
+    <main>
+        <section id="welcome" class="hero">
+            <div class="hero-content">
+                <h1>Welcome to FisioCarrillo</h1>
+                <p>Your physical therapy and rehabilitation center. Recover with us and improve your quality of life.</p>
+                <a href="services.html" class="btn-primary">See All Services</a>
+            </div>
+        </section>
+
+        <section id="services">
+            <h2>Featured Services</h2>
+            <div class="container-service">
+                <div class="service">
+                    <h3>Sports Therapy</h3>
+                    <img src="images/index/terapia-deportiva.webp" alt="Sports therapy" loading="lazy">
+                    <p>Regain your fitness and confidence without surgery, by strengthening and recovering muscles, ligaments and more</p>
+                </div>
+                <div class="service">
+                    <h3>Geriatric Therapy</h3>
+                    <img src="images/index/terapia-geriatrica.webp" alt="Geriatric Therapy" loading="lazy">
+                    <p>Specialized in the diagnosis and treatment of pathologies of older people, improving their quality of life through physiotherapy.</p>
+                </div>
+                <div class="service">
+                    <h3>Pediatric Rehabilitation</h3>
+                    <img src="images/index/terapia-fisica-rehabilitacion.webp" alt="Pediatric Rehabilitation" loading="lazy">
+    
+                    <p>We counsel and treat children and adolescents with developmental delays, movement disorders, and more.</p>
+                </div>
+            </div>
+            
+            <a href="services.html" class="btn-secondary">See All Services</a>
+        </section>
+
+        <section id="cta">
+            <h2>Are you ready to start your treatment?</h2>
+            <p>Request a consultation and start your path to a healthier life.</p>
+            <a href="contact.html" class="btn-primary">Request Appointment</a>
+        </section>
+        <section class="cta-learn">
+            <h2>Learn more about us</h2>
+            <p>Discover our mission, vision and the professional team behind Fisio Carrillo.</p>
+            <a href="aboutus.html" class="btn-secondary">More about Fisio Carrillo</a>
+        </section>
+
+        <section id="testimonials">
+            <h2>Testimonials</h2>
+            <div id="testimonial-container"></div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer">
+            <div>
+                <div class="information">
+                    <p><strong>Professional Fisiocarrillo</strong></p>
+                </div>
+                <div class="addresses">
+                    <p><strong>Addresses:</strong></p>
+                    <a href="https://maps.app.goo.gl/K69qnH7kau12TmSj8" target="_blank">
+                        <p> Av. Jose Carlos Mariategui 2350 - san Garbiel - VMT</p>
+                    </a>
+                    <a href="https://maps.app.goo.gl/tRztrrRoGzoHw5CJ8" target="_blank">
+                        <p>Av. de los Heroes 962 - Urb. San Juan - SJM</p>
+                    </a>
+                </div>
+                <div class="contact">
+                    <p><strong>WhatsApp</strong></p>
+                    <p>VMT <a href="https://wa.me/+51933752664" target="_blank"> <b> +51 933-752-664</b></a></p>
+                    <p>SJM <a href="https://wa.me/+51903094526" target="_blank"> <b> +51 903-094-526</b></a></p>
+                </div>
+            </div>
+            <div class="networks">
+                <a href="https://facebook.com" target="_blank" id="facebook-link" aria-label="Facebook">
+                    <img src="images/facebook.webp" alt="Facebook social media logo">
+                </a>
+                <a href="https://instagram.com" target="_blank" id="instagram-link" aria-label="Instagram">
+                    <img src="images/instagram.webp" alt="Instagram social media logo">
+                </a>
+                <a href="https://wa.me" target="_blank" id="whatsapp-link" aria-label="WhatsApp">
+                    <img src="images/whatsapp.webp" alt="WhatsApp social media logo">
+                </a>
+            </div>
+        </div>
+    </footer>    
+</body>
+</html>

@@ -1,0 +1,358 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px 100px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;   
+}
+
+.logo img {
+    border-radius: 30%;
+    width: 80px;
+    height: auto;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.title h1, p {
+    margin: 0;
+}
+
+.nav {
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-mode {
+    display: flex;
+    flex-direction: row;
+}
+
+.nav a {
+    text-decoration: none;
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+    color: navy;
+    font-weight: bold;
+    transition: transform 0.3 ease;
+}
+
+.nav a:hover {
+    color: yellow;
+}
+
+.mode {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mode .img {
+    margin: 5px;
+    cursor: pointer;
+    width: 20px;
+    height: auto;
+    transition: transform 1s ease;
+}
+
+.mode .img:hover {
+    transform: scale(1.2);
+}
+
+.menu {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    right: 20px;
+    top: 10px;
+    background-color: transparent;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    display: none;
+}
+
+.menu::before {
+    content: '=';
+    font-size: 1.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.menu.open::before {
+    content: '✖️';
+    font-size: 1.1rem;
+    background-color: transparent;
+    width: 30px;
+    height: 30px;
+    
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    padding: 0 100px;
+    display: grid;
+    grid-template-rows:auto auto;
+}
+
+.weather-cards .h2 {
+    font-size: 2rem;
+}
+
+.highlights .h3 {
+    margin: 20px 0 0 0;
+    font-size: 2rem;
+}
+
+.hero {
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+}
+
+.hero, img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cta-btn {
+    position: absolute;
+    color: black;
+    padding: 15px;
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.596);
+    width: 250px;
+    top: 550px;
+    border-radius: 8px;
+    right: 150px;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.cta-btn:hover {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.weather-cards {
+    display: grid;
+    grid-template-rows: auto auto;
+    align-items: center;
+    padding: 20px;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+    gap: 10px;
+}
+
+.events {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.events h3 {
+    background-color: rgba(0, 0, 0, 0.2);
+    text-align: center;
+    color: navy;
+    padding: 10px;
+}
+
+.current-weather {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.img-weather {
+    width: 50px;
+}
+
+.current-weather h3 {
+    background-color: rgba(0, 0, 0, 0.2);
+    text-align: center;
+    color: navy;
+    padding: 10px;
+}
+
+.all-weather {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 10px;
+    
+}
+
+.img-weather {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+    color: yellow;
+}
+
+.current {
+    width: 100%;
+    height: 100%;
+}
+
+.all-weather p {
+    
+    padding: 5px 0;
+    margin: 5px 0;
+}
+
+.weather-forecast {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.img-weather img {
+  width: 80px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.weather-forecast img {
+  width: 30px;
+}
+
+.weather-forecast h3 {
+    background-color: rgba(0, 0, 0, 0.2);
+    text-align: center;
+    color: navy;
+    padding: 10px;
+}
+
+.weather-forecast li {
+    text-decoration: none;
+    list-style: none;
+    padding: 10px;
+    margin: 5px 0;
+    font-weight: bold;
+}
+
+.card-grid {
+    padding: 20px 0 ;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cards {
+    margin: 0 5px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.cards h3, .slogan{
+    background-color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    padding: 0px 10px;
+    color: white;
+    font-weight: bold;
+}
+
+.cards h3 {
+    padding: 15px 0 0 0;
+}
+
+.slogan {
+    font-size: small;
+    padding: 0 0 15px 0;
+}
+
+.cards .biz-details {
+    display: flex;
+    padding: 10px;
+}
+
+.biz-img {
+    width: 100px;
+    height: auto;
+}
+
+.biz-info {
+    margin: 0 0 0 15px;
+}
+
+.biz-info p {
+    margin: 5px 0;
+}
+
+.url a {
+    text-decoration: none;
+    color: rgb(11, 41, 239);
+    transition: transform 0.4s ease;
+}
+
+.url a:hover {
+    color: orangered;
+    transform: scaleX(1.2)
+}
+
+footer {
+    display: grid;
+    justify-content: space-between;    
+    align-items: center;
+    grid-template-columns: auto auto auto;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 10px 100px;
+}
+
+.information, .data {
+    font-size: small;
+}
+
+.information h3 {
+    margin: 10px 0;
+}
+
+.redes i {
+    width: 30px;
+    text-align: center;
+}
+
+.fa-brands {
+    color: black;
+    transition: transform 1s ease;
+}
+
+.fa-brands:hover {
+    color: rgb(26, 182, 42);
+}
+
+
+
+
+
+

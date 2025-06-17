@@ -1,0 +1,29 @@
+[
+    {
+        "name": "Tech Solutions",
+        "tagline": "Innovate your world",
+        "image": "/chamber/images/logo-commerce.webp",
+        "email": "contact@techsolutions.com",
+        "phone": "800-123-4567",
+        "url": "www.techsolutions.com",
+        "membership": "gold"
+    },
+    {
+        "name": "Green Leaf",
+        "tagline": "Naturally better",
+        "image": "/chamber/images/logo-commerce.webp",
+        "email": "info@greenleaf.com",
+        "phone": "800-234-5678",
+        "url": "www.greenleaf.com",
+        "membership": "silver"
+    },
+    {
+        "name": "BuildRight",
+        "tagline": "We build your dreams",
+        "image": "/chamber/images/logo-commerce.webp",
+        "email": "support@buildright.com",
+        "phone": "800-345-6789",
+        "url": "www.buildright.com",
+        "membership": "bronze"
+    }
+]

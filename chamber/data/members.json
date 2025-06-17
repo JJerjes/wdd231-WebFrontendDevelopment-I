@@ -1,0 +1,42 @@
+[
+  {
+    "name": "Repuestos Andinos SAC",
+    "logo": "/chamber/images/logo-commerce.webp",
+    "phone": "(01) 555-1234",
+    "address": "Av. Minera 123, Lima",
+    "website": "https://andinos.pe",
+    "membership": "gold"
+  },
+  {
+    "name": "Equipos del Norte SRL",
+    "logo": "/chamber/images/logo-commerce.webp",
+    "phone": "(044) 555-4321",
+    "address": "Jr. Industrial 456, Trujillo",
+    "website": "https://equiposnorte.com",
+    "membership": "silver"
+  },
+  {
+    "name": "MaqPeru SAC",
+    "logo": "/chamber/images/logo-commerce.webp",
+    "phone": "(01) 555-9876",
+    "address": "Calle Tecnología 789, Arequipa",
+    "website": "https://maqperu.com",
+    "membership": "bronze"
+  },
+  {
+    "name": "Filtros y Aceites Inka",
+    "logo": "/chamber/images/logo-commerce.webp",
+    "phone": "(01) 555-0001",
+    "address": "Av. Repuestos 321, Cusco",
+    "website": "https://inkafiltros.com",
+    "membership": "gold"
+  },
+  {
+    "name": "Industria del Sur",
+    "logo": "/chamber/images/logo-commerce.webp",
+    "phone": "(054) 555-2211",
+    "address": "Zona Industrial Sur, Tacna",
+    "website": "https://indelsur.pe",
+    "membership": "silver"
+  }
+]

@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px 100px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;   
+}
+
+.logo img {
+    border-radius: 30%;
+    width: 80px;
+    height: auto;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.title h1, p {
+    margin: 0;
+}
+
+.nav {
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-mode {
+    display: flex;
+    flex-direction: row;
+}
+
+.nav a {
+    text-decoration: none;
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+    color: navy;
+    font-weight: bold;
+    transition: transform 0.3 ease;
+}
+
+.nav a:hover {
+    color: yellow;
+}
+
+.mode {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mode .img {
+    margin: 5px;
+    cursor: pointer;
+    width: 20px;
+    height: auto;
+    transition: transform 1s ease;
+}
+
+.mode .img:hover {
+    transform: scale(1.2);
+}
+
+.menu {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    right: 20px;
+    top: 10px;
+    background-color: transparent;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    display: none;
+}
+
+.menu::before {
+    content: '=';
+    font-size: 1.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.menu.open::before {
+    content: '✖️';
+    font-size: 1.1rem;
+    background-color: transparent;
+    width: 30px;
+    height: 30px;
+    
+}
+
+main {
+	padding: 0.5rem;
+	background-color: #fff;
+}
+
+.grid-list {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.2);
+    margin: 0 0 15px 0;
+}
+
+.grid-list button {
+    padding: 5px;
+    font-size: 1.5rem;
+    width: 100px;
+    font-weight: bold;
+}
+
+.menu {
+	margin: 1rem auto;
+	padding: 0.5rem;
+	background-color: #333;
+	text-align: center;
+
+	button {
+		padding: 0.5rem 1rem;
+		font-weight: 700;
+	}
+}
+
+.section {
+	border: 1px solid rgb(0 0 0 / 10%);
+	padding: 0.5rem;
+	background-color: #ddd;
+
+	a {
+		font-family: Arial, sans-serif;
+		font-size: 0.85rem;
+		color: navy;
+	}
+
+	h3 {
+		font-size: 1.5rem;
+	}
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	grid-gap: 5px;
+	align-items: center;
+
+	section {
+		text-align: center;
+		& > * {
+			margin: 0.1rem;
+		}
+	}
+
+	img {
+		border: 1px solid #fff;
+		box-shadow: 0 0 1rem #555;
+	}
+}
+
+h3 {
+	font-size: 1.2rem;
+}
+
+.list {
+	display: flex;
+	flex-direction: column;
+
+	section {
+		display: grid;
+		grid-template-columns: 2fr 1fr 1fr;
+		margin: 0;
+		padding: 0.25rem;
+
+		& > * {
+			margin: 0 1rem;
+		}
+
+		img {
+			display: none;
+		}
+
+		h3 {
+			font-size: 1rem;
+		}
+
+		&:nth-child(even) {
+			background-color: #bbb;
+		}
+	}
+}
+
+
+footer {
+    display: grid;
+    justify-content: space-between;    
+    align-items: center;
+    grid-template-columns: auto auto auto;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 10px 100px;
+}
+
+.information, .data {
+    font-size: small;
+}
+
+.information h3 {
+    margin: 10px 0;
+}
+
+.redes i {
+    width: 30px;
+    text-align: center;
+}
+
+.fa-brands {
+    color: black;
+    transition: transform 1s ease;
+}
+
+.fa-brands:hover {
+    color: rgb(26, 182, 42);
+}
+
+
+
+
+
+
